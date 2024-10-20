@@ -6,6 +6,52 @@
 // Siga os comentários para implementar cada parte do desafio.
 
 int main() {
+    char pais[20], estado[20], cidade[20], codigo[20];
+    int populacao, pontosturisticos;
+    float area, pib;
+    printf("\nDigite o nome do pais:");
+    scanf("%s", pais);
+
+    printf("\nDigite o nome do estado:");
+    scanf("%s", estado);
+
+    printf("\nDigite o nome da cidade:");
+    scanf("%s", cidade);
+
+    printf("\nDigite o codigo da cidade:");
+    scanf("%s", codigo);
+
+    printf("\nDigite o numero da populacao da cidade de %s:", cidade);
+    scanf("%d", &populacao);
+    fflush(stdin);
+
+    printf("\nDigite o numero de pontos turistico da cidade de %s:", cidade);
+    scanf("%d", &pontosturisticos);
+    fflush(stdin);
+
+    printf("\nDigite a area da cidade de %s:", cidade);
+    scanf("%f", &area);
+    fflush(stdin);
+
+    printf("\nDigite o pib da cidade de %s:", cidade);
+    scanf("%f", &pib);
+
+
+    printf("\nPais:%s", pais);
+    printf("\nEstado:%s", estado);
+    printf("\nCidade:%s", cidade);
+    printf("\nCodigo:%s", codigo);
+    printf("\nPopulacao:%d pessoas", populacao);
+    printf("\nPontos Turisticos:%d", pontosturisticos);
+    printf("\nArea:%.3fkm", area);
+    printf("\nPib:%.3f", pib);
+
+
+
+
+
+
+
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
