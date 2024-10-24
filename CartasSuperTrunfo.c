@@ -6,9 +6,9 @@
 // Siga os comentários para implementar cada parte do desafio.
 
 int main() {
-    char pais[20], estado[20], cidade[20], codigo[20];
-    int populacao, pontosturisticos;
-    float area, pib, densidade, PibC;
+    char pais[20],pais2[20], estado[20], estado2[20], cidade[20],cidade2[20], codigo[20], codigo2[20];
+    int populacao, pontosturisticos,populacao2, pontosturisticos2;
+    float area, pib, densidade, PibC,area2, pib2, densidade2, PibC2;
     printf("\nDigite o nome do pais:");
     scanf("%s", pais);
 
@@ -51,6 +51,72 @@ int main() {
     printf("\nPib:%.3f", pib);
     printf("\nA densidade demografica é:%f", densidade);
     printf("\nA o PIB per capita é:%f ", PibC);
+
+
+
+    //Segunda carta
+    printf("\nDigite o nome do segundo pais:");
+    scanf("%s", pais2);
+
+    printf("\nDigite o nome do estado:");
+    scanf("%s", estado2);
+
+    printf("\nDigite o nome da cidade:");
+    scanf("%s", cidade2);
+
+    printf("\nDigite o codigo da cidade:");
+    scanf("%s", codigo2);
+
+    printf("\nDigite o numero da populacao da cidade de %s:", cidade2);
+    scanf("%d", &populacao2);
+    fflush(stdin);
+
+    printf("\nDigite o numero de pontos turistico da cidade de %s:", cidade2);
+    scanf("%d", &pontosturisticos2);
+    fflush(stdin);
+
+    printf("\nDigite a area da cidade de %s:", cidade2);
+    scanf("%f", &area2);
+    fflush(stdin);
+
+    printf("\nDigite o pib da cidade de %s:", cidade2);
+    scanf("%f", &pib2);
+
+    densidade2 = populacao2 / area2;
+    PibC2 = pib2 / populacao2;
+
+    printf("\nPais:%s", pais2);
+    printf("\nEstado:%s", estado2);
+    printf("\nCidade:%s", cidade2);
+    printf("\nCodigo:%s", codigo2);
+    printf("\nPopulacao:%d pessoas", populacao2);
+    printf("\nPontos Turisticos:%d", pontosturisticos2);
+    printf("\nArea:%.3fkm", area2);
+    printf("\nPib:%.3f", pib2);
+    printf("\nA densidade demografica é:%f", densidade2);
+    printf("\nA o PIB per capita é:%f ", PibC2);
+
+    printf("///////Comparacao entre Cardas///////");
+    if(densidade > densidade2)
+    {
+        printf("\nA carta da cidade:%s tem maior densidade! ", cidade);
+    }
+    else
+    {
+        printf("\nA carta da cidade:%s tem maior densidade! ", cidade2);
+    }
+
+     if(PibC > PibC2)
+    {
+        printf("\nA carta da cidade:%s tem maior Pib per capita! ", cidade);
+    }
+    else
+    {
+        printf("\nA carta da cidade:%s tem maior Pib per Capita! ", cidade2);
+    }
+
+
+
 
 
 
